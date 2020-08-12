@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15sp"
+        app:cardElevation="50sp"
+        app:cardBackgroundColor="@color/songlistbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/songpic"
+                android:layout_width="124dp"
+                android:layout_height="172dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/musicbg"
+                tools:ignore="VectorDrawableCompat"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/songname"
+                    android:layout_margin="@dimen/songitemmargin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Song name"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/songnametextsize"
+                    tools:layout_editor_absoluteX="248dp"
+                    tools:layout_editor_absoluteY="430dp" />
+
+                <TextView
+                    android:layout_margin="@dimen/songitemmargin"
+                    android:id="@+id/singer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Singer Name"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/singernametextsize"
+                    tools:layout_editor_absoluteX="238dp"
+                    tools:layout_editor_absoluteY="160dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
